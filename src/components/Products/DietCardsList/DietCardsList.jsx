@@ -19,6 +19,7 @@ export const DietCardsList = () => {
   const isLoading = useSelector(selectIsLoading);
   const userBloodType = useSelector(SelectUser).blood;
   // const filter = useSelector(selectFilter);
+ 
 
   useEffect(() => {
     dispatch(getAllProducts());
@@ -28,17 +29,16 @@ export const DietCardsList = () => {
 
   return (
     <>
-      <DietBlockContainer>
-        {isLoading ? (
-          <Loader />
-        ) : products.length === 0 ? (
-          <EmptyProductsListMessage />
-        ) : (
-          products.map((item) => (
+      {isLoading ? (
+        <Loader />
+      ) : (
+        <DietBlockContainer>
+          {products.map((item) => (
             <ProductsItem key={item._id} value={item} blood={userBloodType} />
-          ))
-        )}
-      </DietBlockContainer>
+          ))}
+            {products.length === 0 && <EmptyProductsListMessage/> }
+        </DietBlockContainer>
+      )}
     </>
   );
 };
