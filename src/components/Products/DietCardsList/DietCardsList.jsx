@@ -36,7 +36,7 @@ export const DietCardsList = () => {
           {products.map((item) => (
             <ProductsItem key={item._id} value={item} blood={userBloodType} />
           ))}
-            {products.length === 0 && <EmptyProductsListMessage/> }
+            {products.length === 0 && !isLoading && <EmptyProductsListMessage/> }
         </DietBlockContainer>
       )}
     </>
