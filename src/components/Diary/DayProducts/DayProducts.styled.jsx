@@ -33,6 +33,7 @@ export const HeaderOfProductField = styled.div`
 `;
 
 export const DairyProductsField = styled.div`
+  position: relative;
   border: 1px solid rgba(239, 237, 232, 0.2);
   border-radius: 12px;
   padding: 16px;

@@ -1,4 +1,4 @@
-export const selectIsLoading = (state) => state.isLoading;
+export const selectIsLoading = (state) => state.products.isLoading;
 
 export const selectProductsCategories = (state) =>
   state.products.categoriesList;

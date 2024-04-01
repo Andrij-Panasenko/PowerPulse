@@ -9,16 +9,20 @@ import SharedLayout from 'components/SharedLayout/SharedLayout';
 
 import ErrorPage from 'pages/ErrorPage/ErrorPage';
 
+import { lazy } from 'react';
+
 import { PrivateRoute } from './route/PrivateRoute';
 import { RestrictedRoute } from './route/RestrictedRoute';
-import WelcomePage from './pages/WelcomePage/WelcomePage';
-import RegisterPage from './pages/RegisterPage/RegisterPage';
-import LoginPage from './pages/LoginPage/LoginPage';
-import UserPage from './pages/UserPage/UserPage';
-import ProductsPage from './pages/ProductsPage/ProductsPage';
-import ExercisesPage from './pages/ExercisesPage/ExercisesPage';
-import ProfilePage from './pages/ProfilePage/ProfilePage/ProfilePage';
-import DairyPage from './pages/DairyPage/DairyPage';
+const WelcomePage = lazy(() => import('./pages/WelcomePage/WelcomePage'));
+const RegisterPage = lazy(() => import('./pages/RegisterPage/RegisterPage'));
+const LoginPage = lazy(() => import('./pages/LoginPage/LoginPage'));
+const UserPage = lazy(() => import('./pages/UserPage/UserPage'));
+const ProductsPage = lazy(() => import('./pages/ProductsPage/ProductsPage'));
+const ExercisesPage = lazy(() => import('./pages/ExercisesPage/ExercisesPage'));
+const ProfilePage = lazy(
+  () => import('./pages/ProfilePage/ProfilePage/ProfilePage')
+);
+const DairyPage = lazy(() => import('./pages/DairyPage/DairyPage'));
 import { Loader } from './components/Loader/Loader';
 
 function App() {

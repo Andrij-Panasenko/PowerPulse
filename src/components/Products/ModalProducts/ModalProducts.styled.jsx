@@ -67,6 +67,7 @@ export const DietInputBox = styled.div`
 export const DietNameText = styled.input`
   background: #10100f;
   border: 1px solid #e6533c;
+  outline: transparent;
   border-radius: 12px;
   padding: 8px 14px 8px 14px;
   width: 287px;
@@ -82,6 +83,7 @@ export const GramsInput = styled.input`
   background: #10100f;
   color: #efede8;
   border: 1px solid #e6533c;
+  outline: transparent;
   border-radius: 12px;
   padding: 8px 14px 8px 14px;
   width: 287px;

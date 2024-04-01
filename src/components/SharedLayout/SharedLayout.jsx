@@ -3,13 +3,14 @@ import { Outlet } from 'react-router-dom';
 import { Header } from 'components/Header/Header';
 import { Container } from './SharedLayout.Styles';
 import { Toaster } from 'react-hot-toast';
+import { Loader } from '../Loader/Loader';
 
 const SharedLayout = () => {
   return (
     <>
       <Header />
       <Container>
-        <Suspense fallback={null}>
+        <Suspense fallback={<Loader/>}>
           <Outlet />
         </Suspense>
       </Container>
