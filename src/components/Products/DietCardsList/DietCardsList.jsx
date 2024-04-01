@@ -11,15 +11,12 @@ import {
 import { Loader } from '../../Loader/Loader';
 
 import { EmptyProductsListMessage } from '../EmptyProductsListMessage/EmptyProductsListMessage';
-// import { selectFilter } from '../../../redux/products/selectors';
 import { SelectUser } from '../../../redux/profile/selectors';
 
 export const DietCardsList = () => {
   const dispatch = useDispatch();
   const isLoading = useSelector(selectIsLoading);
   const userBloodType = useSelector(SelectUser).blood;
-  // const filter = useSelector(selectFilter);
- 
 
   useEffect(() => {
     dispatch(getAllProducts());
@@ -29,14 +26,13 @@ export const DietCardsList = () => {
 
   return (
     <>
-      {isLoading ? (
-        <Loader />
-      ) : (
+      {isLoading && <Loader />}
+      {!isLoading && (
         <DietBlockContainer>
           {products.map((item) => (
             <ProductsItem key={item._id} value={item} blood={userBloodType} />
           ))}
-            {products.length === 0 && !isLoading && <EmptyProductsListMessage/> }
+          {products.length === 0 && !isLoading && <EmptyProductsListMessage />}
         </DietBlockContainer>
       )}
     </>

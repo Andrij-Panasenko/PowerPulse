@@ -28,11 +28,11 @@ export const productsSlice = createSlice({
 
   extraReducers: (builder) => {
     builder //categories
-      .addCase(getProductsCategories.pending, (state) => {
-        state.isLoading = true;
-      })
+      // .addCase(getProductsCategories.pending, (state) => {
+        // state.isLoading = true;
+      // })
       .addCase(getProductsCategories.fulfilled, (state, action) => {
-        state.isLoading = false;
+        // state.isLoading = false;
         state.categoriesList = action.payload;
       })
       .addCase(getProductsCategories.rejected, (state, action) => {
