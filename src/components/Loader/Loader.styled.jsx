@@ -6,7 +6,7 @@ export const LoaderWrapper = styled.div`
   align-items: center;
 
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 50%;
   /* display: block;
   width: 100px;

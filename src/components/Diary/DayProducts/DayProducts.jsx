@@ -13,14 +13,17 @@ import { HeadOfField } from '../HeadOfField.styled';
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import { fetchDiaryProducts } from '../../../redux/diary/operations';
-import { selectDiaryProducts } from '../../../redux/diary/selectors';
+import { selectDiaryProducts, selectIsLoading } from '../../../redux/diary/selectors';
 import { Token } from '../../../redux/profile/selectors';
 import { useMediaQuery } from '@mui/material';
+import {Loader} from "../../Loader/Loader.jsx"
 import TableProducts from '../DairyDayDayproductsForTabletAndDesktop/DairyDayDayproductsForTabletAndDesktop';
 
 export const ProductsTable = () => {
   const dispatch = useDispatch();
   const token = useSelector(Token);
+
+  const isLoading = useSelector(selectIsLoading); //temporary
 
   const isMobileScreen = useMediaQuery('(max-width: 767px)');
 
@@ -43,6 +46,7 @@ export const ProductsTable = () => {
           <use xlinkHref={sprite + '#icon-red-raw'} />
         </svg>
       </HeadOfField>
+      {isLoading && <Loader />}
       {isMobileScreen ? (
         <>
           {products.length > 0 ? (
