@@ -16,10 +16,6 @@ export const BackGround = styled.div`
   background-size: 80% auto;
   box-sizing: border-box;
   color: rgb(239, 237, 232);
-  
-
-
-
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
