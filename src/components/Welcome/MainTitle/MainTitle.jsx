@@ -1,5 +1,5 @@
-import { Outline, Title } from "./MainTitle.styled";
-import sprite from "../../../assets/sprite.svg"
+import { Outline, Title } from './MainTitle.styled';
+import sprite from '../../../assets/sprite.svg';
 
 export const MainTitle = () => {
   return (
@@ -12,5 +12,4 @@ export const MainTitle = () => {
       </Title>
     </>
   );
-    
 };

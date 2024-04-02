@@ -1,27 +1,5 @@
 import styled from 'styled-components';
 
-// const LogOut = styled.p`
-//   ${LogOutStyled}
-// `;
-
-// const LogOutProf = ({ color = '#EFEDE8' }) => {
-//   return <LogOut stroke={color} />;
-// };
-
-// const Text = styled.p`
-//   color: #efede8;
-//   font-family: Roboto;
-//   font-size: 14px;
-//   font-style: normal;
-//   font-weight: 400;
-//   line-height: 1.28;
-
-//   @media (min-width: 768px) {
-//     font-size: 16px;
-//     line-height: 1.5;
-//   }
-// `;
-
 export const UserCard = styled.div`
   padding-left: 50px;
   width: 439px;

@@ -1,7 +1,4 @@
-import {
-  Form as FormikForm,
-  Field as FormikField,
-} from 'formik';
+import { Form as FormikForm, Field as FormikField } from 'formik';
 import styled from 'styled-components';
 export const Form = styled(FormikForm)`
   display: flex;
@@ -121,7 +118,7 @@ export const Message = styled.span`
   display: flex;
 `;
 export const SuccessMessage = styled.span`
-display: flex;
+  display: flex;
   font-size: 14px;
   color: green;
 `;

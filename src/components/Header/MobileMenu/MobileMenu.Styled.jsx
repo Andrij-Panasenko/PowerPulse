@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const MainDiv = styled.div`
-
   position: absolute;
   top: 0;
   left: 0;
@@ -14,12 +13,6 @@ export const MainDiv = styled.div`
   justify-content: space-between;
   padding: 20px 20px;
   z-index: 1000;
-
-  /* transform: translateY(-498px);
-  visibility: hidden;
-  
-  transform: none;
-  transition: transform 225ms cubic-bezier(0.17, 0.67, 0.83, 0.67) 0ms; */
 
   overflow: hidden;
 
@@ -35,8 +28,8 @@ export const CloseBtn = styled.button`
   background-color: transparent;
 `;
 
-export const LogOutDiv = styled.div`   
-    display: flex;
-    gap:8px;
-    align-items: center; 
-  `;
+export const LogOutDiv = styled.div`
+  display: flex;
+  gap: 8px;
+  align-items: center;
+`;

@@ -33,12 +33,6 @@ import {
 const validate = (values, props /* only available when using withFormik */) => {
   const errors = {};
 
-  // if (!values.email) {
-  //   errors.email = 'Email is required';
-  // } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
-  //   errors.email = 'Invalid email address';
-  // }
-
   if (!values.name) {
     errors.name = 'Name is required!';
   }
@@ -57,9 +51,6 @@ const validate = (values, props /* only available when using withFormik */) => {
   } else if (values.desiredWeight < 35) {
     errors.currentWeight = 'Min 35kg Weight required';
   }
-
-  // console.log(errors);
-  //...
 
   return errors;
 };

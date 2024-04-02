@@ -1,6 +1,5 @@
 import { CountdownCircleTimer } from 'react-countdown-circle-timer';
 import { useDispatch, useSelector } from 'react-redux';
-// import { timerPlay, timerTime } from '../../store';
 import { useEffect, useRef } from 'react';
 import {
   ButtonStartPause,

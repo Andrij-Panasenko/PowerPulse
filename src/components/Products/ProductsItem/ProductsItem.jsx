@@ -60,18 +60,6 @@ export const ProductsItem = ({
     setModalWellDoneIsOpen(false);
   };
 
-  //   product(product ID) - string; required
-  // date - string; format dd/mm/YYYY; required
-  // amount - number; minimum 1(g); required
-  // calories - number; minimum 1; required
-
-  // const formatDate = (date) => {
-  //   const day = String(date.getDate()).padStart(2, '0');
-  //   const month = String(date.getMonth() + 1).padStart(2, '0');
-  //   const year = date.getFullYear();
-  //   return `${day}/${month}/${year}`;
-  // };
-
   const productData = {
     productId: _id,
     date: initialDate,
@@ -143,7 +131,6 @@ export const ProductsItem = ({
           <AddButton
             onClick={() => {
               dispatch(addProductToDiary(productData));
-              // console.log(productData);
               setModalProductsIsOpen(false);
               setModalWellDoneIsOpen(true);
             }}
