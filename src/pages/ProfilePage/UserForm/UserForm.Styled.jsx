@@ -160,54 +160,6 @@ export const LiRadioBtn = styled.li`
   position: relative;
 `;
 
-// const LabelRadioBtn = styled.label`
-//   background-color: transparent;
-
-//   font-size: 16px;
-//   line-height: 24px;
-
-//   &:checked {
-//     background-color: #e6533c;
-//   }
-//   color: #efede8;
-
-//   @media screen and (min-width: 320px) and (max-width: 375px) {
-//     font-size: 14px;
-//     line-height: 18px;
-//   }
-// `;
-
-// const LabelRadioBtn1 = styled.label`
-//   background-color: transparent;
-//   width: 50px;
-//   height: 50px;
-//   position: relative;
-
-//   display: flex;
-//   justify-content: center;
-//   flex-direction: column;
-//   align-items: center;
-
-//   &checked {
-//     color: tomato;
-//   }
-// `;
-
-// const InputRadioBtn = styled.input`
-//   background: url(${sprite + '#icon--RadioButton'}) no-repeat center;
-//   border: 1px solid tomato;
-//   margin-right: 8px;
-//   width: 24px;
-//   height: 24px;
-
-//   &:checked {
-//     background-color: #e6533c;
-//   }
-//   @media screen and (min-width: 320px) and (max-width: 375px) {
-//     width: 20px;
-//     height: 20px;
-//   }
-// `;
 export const BloodLabel = styled(Label)`
   @media screen and (min-width: 320px) {
     margin-right: auto;
@@ -251,7 +203,7 @@ export const NameEmailContainer = styled.div`
     gap: 14px;
     justify-content: center;
     align-items: center;
-    margin-left: 
+    /* margin-left:  */
 
     width: 100%;
   }
@@ -282,7 +234,7 @@ export const DataContainer = styled.div`
 
   margin-bottom: 16px;
 
-  @media screen (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     flex-direction: row;
 
     flex-wrap: wrap;
@@ -418,9 +370,6 @@ export const InputRadioBtn = styled.input`
   &:checked + ${LabelRadioBtn}::before {
     border-color: #ef8964;
     background-color: #ef8964;
-    // background-size: 50%;
-    // content: '';
-    // background-image: url(${sprite + '#icon-1'});
   }
 
   @media screen and (min-width: 320px) {
