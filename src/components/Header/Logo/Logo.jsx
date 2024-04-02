@@ -13,17 +13,15 @@ export const Logo = () => {
   const isMobileScreen = useMediaQuery('(max-width: 767px)');
 
   return (
-      <Link
-          to={
-            userInfo.birthday !== null || isLoggedIn === false ? '/' : '/profile'
-          }
-        >
-    <svg
-      width={isMobileScreen ? '126px' : '151px'}
-      height={isMobileScreen ? '13px' : '17px'}
+    <Link
+      to={userInfo.birthday !== null || isLoggedIn === false ? '/' : '/profile'}
     >
-      <use xlinkHref={sprite + '#icon-Logo-1'} />
-    </svg>
-      </Link>
+      <svg
+        width={isMobileScreen ? '126px' : '151px'}
+        height={isMobileScreen ? '13px' : '17px'}
+      >
+        <use xlinkHref={sprite + '#icon-Logo-1'} />
+      </svg>
+    </Link>
   );
 };
