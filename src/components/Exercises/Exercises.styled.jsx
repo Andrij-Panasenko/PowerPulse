@@ -59,15 +59,3 @@ export const ArrowSvgBack = styled.svg`
   transform: rotate(180deg);
   stroke: ${(props) => props.theme.colors.grey};
 `;
-
-// export const ExercisesList = styled.ul`
-//   display: flex;
-//   flex-direction: column;
-//   gap: 20px;
-//   @media screen and (min-width: 768px) {
-//     /* display: flex;
-//     flex-wrap: wrap;
-//     flex-direction: row;
-//     gap: 32px 16px; */
-//   }
-// `;

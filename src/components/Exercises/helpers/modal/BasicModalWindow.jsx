@@ -21,7 +21,6 @@ const BasicModalWindow = () => {
       left: '50%',
       right: 'auto',
       bottom: 'auto',
-      // marginRight: '-50%',
       transform: 'translate(-50%, -50%)',
       width: isMobileScreen ? '335px' : '694px',
       height: isMobileScreen ? '788px' : '550px',
