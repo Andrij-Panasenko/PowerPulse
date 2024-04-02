@@ -43,7 +43,6 @@ export const ProductsFilter = () => {
 
   useEffect(() => {
     dispatch(getProductsCategories());
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
