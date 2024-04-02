@@ -1,8 +1,7 @@
-import{u as d}from"./index-0cc6453b.js";const i=d.div`
+import{u as p}from"./index-7f9d4c74.js";const i=p.div`
   padding-bottom: 40px;
   padding-right: 20px;
   padding-top: 127px;
-  /* outline: 2px solid red; */
 
   @media screen and (min-width: 768px) {
     padding-bottom: 48px;

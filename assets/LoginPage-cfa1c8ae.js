@@ -1,4 +1,4 @@
-import{u as n,r as j,f as b,j as e,s as o,l as v,i as y,L as S}from"./index-0cc6453b.js";import{b as $,F as k,a as z}from"./formik.esm-29aff15c.js";import{c as E,a as d,P as F}from"./PhotoHero-97a37cfa.js";import{M as I}from"./MainPageInfo-0b800b7f.js";import{C as P}from"./Welcome.styled-4042fa09.js";import"./hoist-non-react-statics.cjs-3f8ebaa8.js";const L=n($)`
+import{u as n,r as j,f as b,j as e,s as o,l as v,i as y,L as S}from"./index-7f9d4c74.js";import{b as $,F as k,a as z}from"./formik.esm-c6fea360.js";import{c as E,a as d,P as F}from"./PhotoHero-70426d35.js";import{M as I}from"./MainPageInfo-a88482ec.js";import{C as P}from"./Welcome.styled-277bb06b.js";import"./hoist-non-react-statics.cjs-3f8ebaa8.js";const L=n($)`
   display: flex;
   flex-direction: column;
   gap: 14px;
@@ -108,7 +108,7 @@ import{u as n,r as j,f as b,j as e,s as o,l as v,i as y,L as S}from"./index-0cc6
   color: red;
   display: flex;
 `,c=n.span`
-display: flex;
+  display: flex;
   font-size: 14px;
   color: green;
 `,C=n.button`
@@ -148,21 +148,22 @@ display: flex;
     margin-top: 2px;
   }
 `,G=E().shape({email:d().matches(/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/,"Invalid email format. Example: ivanov@com.ua").required("Email is required"),password:d().min(6,"Password must be at least 6 characters").required("Password is required")}),R=()=>{const[i,g]=j.useState(!1),a=e.jsx(T,{children:e.jsx("use",{xlinkHref:o+"#icon-checkbox-circle-fillGreen"})}),r=e.jsx(A,{children:e.jsx("use",{xlinkHref:o+"#icon-checkbox-circle-fill"})}),w=b(),{isLoggedIn:f}=y,u=(t,s)=>{w(v(t)),f&&s.resetForm()};return e.jsxs("div",{children:[e.jsx(M,{children:"Sign In"}),e.jsx(q,{children:"Welcome! Please enter your credentials to login to the platform:"}),e.jsx(z,{initialValues:{email:"",password:""},validationSchema:G,onSubmit:u,children:({errors:t,touched:s})=>e.jsxs(L,{children:[e.jsxs(x,{children:[e.jsx(l,{name:"email",id:"email",type:"email",placeholder:"Email",className:t.email&&s.email?"invalid":s.email&&!t.email?"valid":""}),s.email&&(t.email||!t.email)&&e.jsxs(m,{children:[t.email&&e.jsxs(p,{children:[r,t.email]}),!t.email&&e.jsxs(c,{children:[a,"Success email"]})]})]}),e.jsxs(x,{children:[e.jsx(l,{name:"password",id:"password",type:i?"text":"password",placeholder:"Password",className:t.password&&s.password?"invalid":s.password&&!t.password?"valid":""}),s.password&&(t.password||!t.password)&&e.jsxs(m,{children:[t.password&&e.jsxs(p,{children:[r,t.password]}),!t.password&&e.jsxs(c,{children:[a,"Success password"]})]}),e.jsx(C,{type:"button",onClick:()=>{g(!i)},children:i?e.jsx(h,{children:e.jsx("use",{xlinkHref:o+"#icon-eye"})}):e.jsx(h,{children:e.jsx("use",{xlinkHref:o+"#icon-eye-off"})})})]}),e.jsx(H,{type:"submit",children:"Sign In"})]})})]})},V=n.p`
-font-weight: 400;
+  font-weight: 400;
   font-size: 12px;
   line-height: 150%;
   color: ${i=>i.theme.colors.white};
   opacity: 30%;
 `,W=n(S)`
-font-weight: 400;
-font-size: 12px;
-line-height: 150%;
-color: ${i=>i.theme.colors.white};
-opacity: 80%;
-text-decoration: underline;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: ${i=>i.theme.colors.white};
+  opacity: 80%;
+  text-decoration: underline;
 `,B=n.div`
-display:flex;
-margin-top: 12px`,D=()=>e.jsx("div",{children:e.jsxs(B,{children:[e.jsx(V,{children:"Don’t have an account?"}),e.jsx(W,{to:"/register",children:" Sign Up"})]})}),N=n.div`
+  display: flex;
+  margin-top: 12px;
+`,D=()=>e.jsx("div",{children:e.jsxs(B,{children:[e.jsx(V,{children:"Don’t have an account?"}),e.jsx(W,{to:"/register",children:" Sign Up"})]})}),N=n.div`
   min-height: 433px;
   @media screen and (min-width: 768px) {
     min-height: 525px;
