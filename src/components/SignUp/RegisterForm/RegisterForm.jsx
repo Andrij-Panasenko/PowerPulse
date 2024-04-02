@@ -15,13 +15,16 @@ import {
   EyeBtn,
   EyeSvg,
 } from './RegisterForm.styled';
-import { useDispatch } from "react-redux"
+import { useDispatch } from 'react-redux';
 import { register } from '../../../redux/auth/operations';
 
 const RegisterSchema = Yup.object().shape({
   name: Yup.string().required('Name is required'),
   email: Yup.string()
-    .matches(/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/, 'Invalid email. Example: expl@com.ua')
+    .matches(
+      /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/,
+      'Invalid email. Example: expl@com.ua'
+    )
     .required('Email is required'),
   password: Yup.string()
     .min(6, 'Password must be at least 6 characters')
@@ -35,7 +38,7 @@ export const RegisterForm = () => {
   const handleSubmit = (values, actions) => {
     dispatch(register(values));
     actions.resetForm();
-  }
+  };
 
   const successSvg = (
     <SuccessSvg>
@@ -57,7 +60,6 @@ export const RegisterForm = () => {
         password: '',
       }}
       validationSchema={RegisterSchema}
-
       onSubmit={handleSubmit}
     >
       {({ errors, touched }) => (
@@ -140,11 +142,15 @@ export const RegisterForm = () => {
                       : ''
                 }
               />
-              <EyeBtn type="button" onClick={()=>{setIsVisiblePsw(!isVisiblePsw);}}>
+              <EyeBtn
+                type="button"
+                onClick={() => {
+                  setIsVisiblePsw(!isVisiblePsw);
+                }}
+              >
                 {isVisiblePsw ? (
                   <EyeSvg>
                     <use xlinkHref={sprite + '#icon-eye'}></use>
-                    
                   </EyeSvg>
                 ) : (
                   <EyeSvg>

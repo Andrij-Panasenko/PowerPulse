@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { Link } from "react-router-dom";
+import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 export const LinkText = styled.p`
   font-size: 12px;
@@ -19,6 +19,6 @@ export const LinkText = styled.p`
 `;
 
 export const SigninLink = styled(Link)`
-    text-decoration: underline;
-    color: ${(p) => p.theme.colors.white};
-`
+  text-decoration: underline;
+  color: ${(p) => p.theme.colors.white};
+`;
