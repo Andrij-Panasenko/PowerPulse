@@ -20,7 +20,6 @@ export const getAllProducts = createAsyncThunk(
   async (query = {}, thunkAPI) => {
     const { title = '', category = '', recommended = '' } = query;
 
-    let endpoint = 'api/products';
     try {
       let endpoint = 'api/products';
       const queryParams = {};
