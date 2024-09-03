@@ -66,8 +66,6 @@ const Usercard = () => {
     dispatch(logOut());
   };
 
-  console.log(user.bmr);
-
   return (
     <UserCard>
       <CardContainer>
