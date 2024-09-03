@@ -284,13 +284,14 @@ export const DataContainerItem = styled.div`
 export const FormBtn = styled.button`
   background: #e6533c;
   border: none;
-  color: rgba(239, 237, 232, 0.6);
+  color: rgba(239, 237, 232);
   border-radius: 12px;
 
   width: 144px;
   height: 56px;
   &:disabled {
     cursor: auto;
+    color: rgba(239, 237, 232, 0.6);
   }
 
   @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -391,9 +392,10 @@ export const ErrorDiv = styled.div`
 
 export const SuccessDiv = styled.div`
   display: flex;
+  position: absolute;
   align-items: center;
   gap: 4px;
-  padding-left: 10px;
+  /* padding-left: 10px; */
   font-size: 12px;
   line-height: 18px;
   color: #3cbf61;
