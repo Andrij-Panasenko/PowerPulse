@@ -1,4 +1,4 @@
-import{u as n,r as j,f as b,j as e,s as o,l as v,i as y,L as S}from"./index-7f9d4c74.js";import{b as $,F as k,a as z}from"./formik.esm-c6fea360.js";import{c as E,a as d,P as F}from"./PhotoHero-70426d35.js";import{M as I}from"./MainPageInfo-a88482ec.js";import{C as P}from"./Welcome.styled-277bb06b.js";import"./hoist-non-react-statics.cjs-3f8ebaa8.js";const L=n($)`
+import{u as n,r as j,f as b,j as e,s as o,l as v,i as y,L as S}from"./index-336ec666.js";import{b as $,F as k,a as z}from"./formik.esm-081e0096.js";import{c as E,a as d,P as F}from"./PhotoHero-c060fe4a.js";import{M as I}from"./MainPageInfo-bf06670e.js";import{C as P}from"./Welcome.styled-ce607130.js";import"./hoist-non-react-statics.cjs-3f8ebaa8.js";const L=n($)`
   display: flex;
   flex-direction: column;
   gap: 14px;

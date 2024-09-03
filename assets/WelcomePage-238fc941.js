@@ -1,4 +1,4 @@
-import{u as n,j as i,s as r,N as o,h as t,a,b as s,c as d,d as p,e as x}from"./index-7f9d4c74.js";import{C as h}from"./Welcome.styled-277bb06b.js";import{M as g}from"./MainPageInfo-a88482ec.js";const c=n.h1`
+import{u as n,j as i,s as r,N as o,h as t,a,b as s,c as d,d as p,e as x}from"./index-336ec666.js";import{C as h}from"./Welcome.styled-ce607130.js";import{M as g}from"./MainPageInfo-bf06670e.js";const c=n.h1`
   position: relative;
   font-weight: 500;
   font-size: 38px;
