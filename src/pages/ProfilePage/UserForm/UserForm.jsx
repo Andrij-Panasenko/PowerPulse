@@ -58,7 +58,6 @@ const validate = (values) => {
 
 const UserForm = () => {
   const navigate = useNavigate()
-  console.log("🚀 ~ UserForm ~ navigate:", navigate)
   const currentUser = useSelector(SelectUser);
   const dispatch = useDispatch();
 
