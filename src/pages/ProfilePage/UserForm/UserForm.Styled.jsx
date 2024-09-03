@@ -290,7 +290,7 @@ export const FormBtn = styled.button`
   width: 144px;
   height: 56px;
   &:disabled {
-    cursor: none;
+    cursor: auto;
   }
 
   @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -318,6 +318,7 @@ export const LabelRadioBtn = styled.label`
 
   &::before {
     content: '';
+    cursor: pointer;
     display: inline-block;
     width: 24px;
     height: 24px;
