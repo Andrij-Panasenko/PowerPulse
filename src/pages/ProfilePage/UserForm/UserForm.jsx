@@ -30,7 +30,7 @@ import {
   SuccessDiv,
 } from './UserForm.Styled.jsx';
 
-const validate = (values, props /* only available when using withFormik */) => {
+const validate = (values) => {
   const errors = {};
 
   if (!values.name) {

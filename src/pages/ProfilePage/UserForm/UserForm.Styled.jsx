@@ -381,10 +381,11 @@ export const InputRadioBtn = styled.input`
 export const ErrorDiv = styled.div`
   display: flex;
   gap: 4px;
-  padding-left: 10px;
   font-size: 12px;
   line-height: 18px;
   color: #d80027;
+
+  position: absolute;
 `;
 
 export const SuccessDiv = styled.div`
