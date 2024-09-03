@@ -29,8 +29,9 @@ import {
   ErrorDiv,
   SuccessDiv,
 } from './UserForm.Styled.jsx';
+import { useNavigate } from 'react-router-dom';
 
-const validate = (values, props /* only available when using withFormik */) => {
+const validate = (values) => {
   const errors = {};
 
   if (!values.name) {
@@ -56,6 +57,8 @@ const validate = (values, props /* only available when using withFormik */) => {
 };
 
 const UserForm = () => {
+  const navigate = useNavigate()
+  console.log("🚀 ~ UserForm ~ navigate:", navigate)
   const currentUser = useSelector(SelectUser);
   const dispatch = useDispatch();
 
@@ -82,8 +85,8 @@ const UserForm = () => {
     onSubmit: (values) => {
       delete values.email;
 
-      // console.log('values', values);
       dispatch(patchUserParams({ values: values }));
+      navigate('/diary') // navigate to diary after success data saving
     },
   });
 

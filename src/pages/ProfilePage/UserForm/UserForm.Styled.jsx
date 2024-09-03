@@ -284,13 +284,14 @@ export const DataContainerItem = styled.div`
 export const FormBtn = styled.button`
   background: #e6533c;
   border: none;
-  color: rgba(239, 237, 232, 0.6);
+  color: rgba(239, 237, 232);
   border-radius: 12px;
 
   width: 144px;
   height: 56px;
   &:disabled {
-    cursor: none;
+    cursor: auto;
+    color: rgba(239, 237, 232, 0.6);
   }
 
   @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -318,6 +319,7 @@ export const LabelRadioBtn = styled.label`
 
   &::before {
     content: '';
+    cursor: pointer;
     display: inline-block;
     width: 24px;
     height: 24px;
@@ -381,17 +383,19 @@ export const InputRadioBtn = styled.input`
 export const ErrorDiv = styled.div`
   display: flex;
   gap: 4px;
-  padding-left: 10px;
   font-size: 12px;
   line-height: 18px;
   color: #d80027;
+
+  position: absolute;
 `;
 
 export const SuccessDiv = styled.div`
   display: flex;
+  position: absolute;
   align-items: center;
   gap: 4px;
-  padding-left: 10px;
+  /* padding-left: 10px; */
   font-size: 12px;
   line-height: 18px;
   color: #3cbf61;
